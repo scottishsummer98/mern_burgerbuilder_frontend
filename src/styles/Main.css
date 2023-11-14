@@ -1,0 +1,355 @@
+/* Auth.jsx */
+.form_container {
+  padding: 5em;
+  text-align: left;
+  width: 30%;
+  margin: auto;
+}
+.validation_error {
+  color: red;
+  font-size: small;
+}
+/* Header.jsx */
+.header_container {
+  display: flex;
+  flex-direction: row;
+  gap: 40rem;
+  justify-content: space-around;
+  font-size: 1rem;
+  background-color: #212529;
+  padding: 1rem;
+}
+.header_logo {
+  height: 1.5rem;
+}
+.header_navlink {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+/* Body.jsx */
+.body_container {
+  width: 65%;
+  padding: 2rem;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+/* Dashboard.jsx */
+.dashboard_container {
+  padding: 2rem;
+  margin: auto;
+  width: 80%;
+}
+/* Burger.jsx */
+.burger_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  align-content: center;
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+}
+.burger_container::-webkit-scrollbar {
+  display: none;
+}
+/* Hide scrollbar for IE, Edge and Firefox */
+.burger_container {
+  -ms-overflow-style: none; /* IE, Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.burger_builder_text {
+  font-size: 1.2rem;
+}
+/* BurgerBuilder.jsx */
+.burger_builder_container {
+  border: 5px solid #212529;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 36vh;
+}
+.burger_builder_control_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5rem;
+}
+
+.burger_builder_container_text,
+.burger_builder_control_container_text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.burger_builder_control_container_ingredients {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.burger_builder_control_container_buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+/* Ingredients.jsx */
+.ingredient img {
+  width: 20rem;
+  border-radius: 5px;
+}
+/* Shipping.jsx */
+.shipping_container {
+  width: 80%;
+  margin: auto;
+  padding: 2rem;
+}
+.shipping_container_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.shipping_container_form_text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+/* Checkout.jsx */
+.checkout_container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  gap: 5rem;
+  margin: auto;
+  padding: 2rem;
+}
+.checkout_shipping_details_container,
+.checkout_order_details_container {
+  width: 100%;
+}
+/* SingleOrder.jsx */
+.single_order_container {
+  padding: 2rem;
+  border: 1px solid grey;
+  box-shadow: 1px 1px #888888;
+  border-radius: 5px;
+  background-color: rgb(51, 51, 51);
+  margin-bottom: 2rem;
+}
+.single_order_container_ingredients {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 1rem;
+  background-color: #212529;
+}
+.single_order_container_ingredients_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Spinner  */
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+
+/* Media Queries Medium Devices*/
+@media screen and (max-width: 1024px) {
+  /* Auth.jsx */
+  .form_container {
+    padding: 7em;
+    width: 70%;
+  }
+  /* Header.jsx */
+  .header_container {
+    gap: 5rem;
+  }
+  /* Body.jsx */
+  .body_container {
+    width: 100%;
+    padding: 3rem;
+    gap: 1rem;
+  }
+  /* Dashboard.jsx */
+  .dashboard_container {
+    padding: 1rem;
+    width: 100%;
+  }
+  /* Burger.jsx */
+  .burger_builder_text {
+    font-size: 1rem;
+  }
+  /* BurgerBuilder.jsx */
+  .burger_builder_container {
+    padding: 1rem;
+    height: 23vh;
+  }
+  .burger_builder_control_container {
+    gap: 1rem;
+  }
+
+  .burger_builder_container_text,
+  .burger_builder_control_container_text {
+    font-size: 1rem;
+  }
+  .burger_builder_control_container_ingredients {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+  .burger_builder_control_container_buttons {
+    gap: 5px;
+  }
+  /* Ingredients.jsx */
+  .ingredient img {
+    width: 18rem;
+    border-radius: 5px;
+  }
+  /* Shipping.jsx */
+  .shipping_container {
+    width: 100%;
+  }
+  /* Checkout.jsx */
+  .checkout_container {
+    width: 100%;
+    gap: 2rem;
+  }
+  /* SingleOrder.jsx */
+  .single_order_container {
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Media Queries Small Devices*/
+@media screen and (max-width: 600px) {
+  /* Auth.jsx */
+  .form_container {
+    padding: 2em;
+    width: 100%;
+  }
+  /* Header.jsx */
+  .header_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    font-size: 1rem;
+    background-color: #212529;
+    padding: 1rem;
+  }
+  /* Body.jsx */
+  .body_container {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  /* Burger.jsx */
+  .burger_container {
+    height: 50vh;
+  }
+  .burger_builder_text {
+    font-size: 1rem;
+  }
+  /* BurgerBuilder.jsx */
+  .burger_builder_container {
+    padding: 1rem;
+    height: 41vh;
+  }
+  .burger_builder_control_container {
+    gap: 1rem;
+  }
+  .burger_builder_container_text,
+  .burger_builder_control_container_text {
+    font-size: 1rem;
+  }
+  .burger_builder_control_container_ingredients {
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+  }
+  .burger_builder_control_container_buttons {
+    gap: 5px;
+  }
+  /* Ingredients.jsx */
+  .ingredient img {
+    width: 18rem;
+    border-radius: 5px;
+  }
+  /* Checkout.jsx */
+  .checkout_container {
+    width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  /* SingleOrder.jsx */
+  .single_order_container_ingredients {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .single_order_container_ingredients_container {
+    display: block;
+  }
+}
